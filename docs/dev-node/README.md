@@ -68,6 +68,16 @@ running the application. The project provides the following npm scripts:
   tests and inspect the application state during test execution. This also requires a
   graphical environment and may not work in headless setups like CodeSpaces.
 
+## Testing
+
+The application uses [Playwright](https://playwright.dev/) for end-to-end testing.
+to run the test suite, use the following command:
+
+```bash
+npm run test:install
+npm test
+```
+
 ## Docker Support
 
 - Install [Docker](https://docs.docker.com/get-docker/) on your local machine.
