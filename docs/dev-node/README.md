@@ -4,22 +4,30 @@ This document provides instructions for working with the full-stack web
 application. Docker is not required for local development and testing, although
 it can be used if desired. This project has been fully tested and is supported
 on GitHub [CodeSpaces](https://github.com/features/codespaces). Fork the
-repository and create a new CodeSpace to get started quickly without needing to
-install any software locally.
+repository and create a new CodeSpace to get started developing immediately.
 
-## Software Requirements
+## Local Machine Setup
 
-Make sure you have the following installed on your development machine:
+**Important:** Your professor or TA can not provide help or troubleshooting for
+your personal machine setups due to the wide variety of operating systems and
+configuration. These instructions are provided as a guide, but your mileage may
+vary. If you are unable to get this working on your local machine, you will need
+to use CodeSpaces or come in to a lab with pre-configured machines.
 
-- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [VS Code](https://code.visualstudio.com/download)
-- [Node.js](https://nodejs.org/en/download) version 24 or higher
-  - Make sure you select "Automatically install the necessary tools" during installation on Windows
-  ![Node.js installer screenshot](./automatic-install.png)
-- [Docker](https://docs.docker.com/get-docker/) (optional, but recommended for
-  consistency)
+Install the following:
 
-## Getting Started
+- Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- Install [VS Code](https://code.visualstudio.com/download)
+- Install [Node.js](https://nodejs.org/en/download) version 24 or higher
+- Install [Docker](https://docs.docker.com/get-docker/) on your local machine.
+
+**IMPORTANT:** Make sure you select "Automatically install the necessary tools"
+when installing Node.js on Windows to ensure that all required components are set up
+correctly. This option is shown in the screenshot below:
+
+![Node.js installer screenshot](./automatic-install.png)
+
+## Development
 
 The application is located in the `app` directory. All commands should be run
 from within this directory. Navigate to the `app` by running `cd app` from the
@@ -58,13 +66,16 @@ running the application. The project provides the following npm scripts:
   tests and inspect the application state during test execution. This also requires a
   graphical environment and may not work in headless setups like CodeSpaces.
 
-## Build Script
+## Docker Support
 
-If you have Docker installed and want to use it for building and managing the
-application, a `dev.sh` script is provided at the root of the repository to
-simplify common tasks such as building the application, running tests, and
-cleaning up files. You can run the script with different commands as arguments.
-For example, to build the application, run:
+- Install [Docker](https://docs.docker.com/get-docker/) on your local machine.
+- Ensure Docker is running before starting the application.
+
+A `dev.sh` script is provided at the root of the repository to simplify common
+tasks such as building the application, running tests, and cleaning up files.
+You can run the script with different commands as arguments. For example, to
+build the application, run:
+
 ```bash
 ./dev.sh build
 ```
@@ -73,21 +84,3 @@ To see all available commands, run:
 ```bash
 ./dev.sh help
 ```
-
-## Local Machine (Unsupported)
-
-**Important:** This method is unsupported the department does not provide help
-or troubleshooting for local machine setups due to the wide variety of operating
-systems and configurations.
-
-If you are unable to get this working on your local machine, you will need to
-use CodeSpaces or come in to a lab with pre-configured machines.
-
-Install the following:
-
-- Install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- Install [VS Code](https://code.visualstudio.com/download)
-- Install [Node.js](https://nodejs.org/en/download) version 24 or higher
-- Install [Docker](https://docs.docker.com/get-docker/) on your local machine.
-
-Then just follow the same steps as outlined above.
