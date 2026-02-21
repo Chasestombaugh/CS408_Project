@@ -8,3 +8,5 @@ deploy to various environments, including AWS EC2 instances.
 
 Project documentation is available in the [`docs`](docs/README.md) directory, covering
 development, deployment, and configuration topics in detail.
+
+test for ci
